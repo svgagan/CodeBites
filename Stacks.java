@@ -5,7 +5,7 @@ class Stacks{
 
 	private int top = -1;
 	
-	//PUSH operation on stack
+	//PUSH operation on stack - O(1) 
 	public void push(int key, int[] stackArray){
 		if(top >= stackArray.length-1){
 			System.out.println("Stack Overflow Occurred");
@@ -15,7 +15,7 @@ class Stacks{
 		}
 	}
 	
-	//POP operation on stack
+	//POP operation on stack - O(1)
 	public void pop(int[] stackArray){
 		if(top < 0){
 			System.out.println("Stack Underflow Occurred");
