@@ -1,2 +1,2 @@
-# CodeSamples
+# CodeBites
 Sample Java Programs
