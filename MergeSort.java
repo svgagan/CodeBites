@@ -26,7 +26,7 @@ class MergeSort{
 				j++; 
 			} 
 			k++; 
-        }
+		}
 		
 		/* Copy remaining elements of left[] if any */
 		while(i < sizeOne){
