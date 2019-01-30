@@ -31,15 +31,15 @@ class MergeSort{
 		/* Copy remaining elements of left[] if any */
 		while(i < sizeOne){
 			arraySort[k] = left[i]; 
-            i++; 
-            k++;
+			i++; 
+			k++;
 		}
 		
 		/* Copy remaining elements of right[] if any */
 		while(j < sizeTwo){
-			arraySort[k] = right[i]; 
-            j++; 
-            k++;
+			arraySort[k] = right[j]; 
+			j++; 
+			k++;
 		}
 	}
 	
