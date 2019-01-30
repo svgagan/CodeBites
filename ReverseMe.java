@@ -1,6 +1,6 @@
 import java.util.*;
-/* Reverse a string */
-class Simple{  
+/* Reverse a string without using build-in libraries */
+class ReverseMe{  
 	
 	 static public String reverseMe(String s){	 
 		if(s.length() == 0){
@@ -11,12 +11,10 @@ class Simple{
 	} 
 	public static void main(String args[]){  
 	 Scanner scan = new Scanner(System.in);
+	 System.out.println("Enter a String: ");
 	 String value = scan.next();
-	 //StringBuffer s1 = new StringBuffer(value);
-	 //StringBuffer s2 = s1.reverse();
 	 String reversed = reverseMe(value);
 	 System.out.println("Input String -> "+value);  
 	 System.out.println("Reversed String -> "+reversed);
-	 System.out.println(1+"3");
 	}  
 }
