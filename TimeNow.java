@@ -1,9 +1,11 @@
 import java.util.*;
 
-class Solution {
+/* Given a time represented in the format "HH:MM", form the next closest time by reusing the current digits. 
+There is no limit on how many times a digit can be reused. */
+class TimeNow {
     
     static int[] mins = { 600, 60, 10, 1 };
-    public String solution(String time) {
+    public String timer(String time) {
         int colon = time.indexOf(':');
         int cur = Integer.valueOf(time.substring(0, colon)) * 60 + Integer.valueOf(time.substring(colon + 1));
         char[] next = new char[4];
@@ -18,10 +20,11 @@ class Solution {
     }
     
     public static void main(String args[]){
-        Solution sol = new Solution();
+        TimeNow time = new TimeNow();
         Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Time in format HH:MM");
         String tym = sc.next();
-        String newTym = sol.solution(tym);
+        String newTym = time.timer(tym);
         System.out.println("Subset time ->"+ newTym);
     }
     
