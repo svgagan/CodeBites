@@ -3,7 +3,44 @@ import java.util.*;
 class MergeSort{
 
 	public void combineTech(int[] arraySort, int head, int mid, int rear){
-		int sizeOne
+		int sizeOne = mid - head + 1;
+		int sizeTwo = rear - mid;
+		int[] left = new int[sizeOne];
+		int[] right = new int[sizeTwo];
+		
+		for(int i=0; i<sizeOne; i++){
+			left[i] = arraySort[head+i];
+		}
+		
+		for(int j=0; j<sizeTwo; j++){
+			right[j] = arraySort[mid+1+j];
+		}
+		
+		int i=0,j=0,k=head;
+		while (i < sizeOne && j < sizeTwo){ 
+			if (left[i] <= right[j]) { 
+				arraySort[k] = left[i]; 
+				i++; 
+			} else{ 
+				arraySort[k] = right[j]; 
+				j++; 
+			} 
+			k++; 
+        }
+		
+		/* Copy remaining elements of left[] if any */
+		while(i < sizeOne){
+			arraySort[k] = left[i]; 
+            i++; 
+            k++;
+		}
+		
+		/* Copy remaining elements of right[] if any */
+		while(j < sizeTwo){
+			arraySort[k] = right[i]; 
+            j++; 
+            k++;
+		}
 	}
 	
 	public void divideTech(int[] arraySort, int head, int rear){
