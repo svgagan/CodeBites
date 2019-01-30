@@ -1,5 +1,5 @@
 import java.util.*;
-/* Roman to decimal */
+/* Converting Roman to decimal */
 class Roman{  
 		 
 	 public static int romanTointeger(String num){
@@ -20,6 +20,7 @@ class Roman{
 		}
 		return intNum;
 	}
+	
 	public static void main(String args[]){ 
 	 System.out.println("Enter Roman Number");
 	 Scanner scan = new Scanner(System.in);
