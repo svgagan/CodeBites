@@ -1,5 +1,5 @@
 import java.util.*;
-/* Prime number */
+/* Prime number Checker */
 class Prime{  
 	
 	 static public String primeCheck(int s){
@@ -20,11 +20,12 @@ class Prime{
 			return "is Prime.";
 		}
 	} 
+	
 	public static void main(String args[]){  
 	 Scanner scan = new Scanner(System.in);
+	 System.out.print("Enter a number: ");
 	 int value = scan.nextInt();
 	 String response = primeCheck(value);
-	 System.out.println("Input Value -> "+value);  
-	 System.out.println("Given number "+ value +" "+response);  
+	 System.out.println("\nGiven number "+ value +" "+response);  
 	}  
 }
