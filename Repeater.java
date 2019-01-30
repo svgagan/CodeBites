@@ -1,5 +1,18 @@
 
 import java.util.*;
+
+/* Sample Output 
+
+Enter a String
+GeeksGagan
+Input String -> GeeksGagan
+First Character Repeated -> G
+First Character Not Repeated -> k
+First Character Repeated whose index of first occurrence is smallest -> e
+
+
+*/
+
 /* find First Non-Repeated and Repeated Character from String */
 class Repeater{  
 	
