@@ -1,7 +1,9 @@
 import java.util.*;
 
+/* Merge Sort Implementation -O(nlogn)*/
 class MergeSort{
 
+	/* Method for combining the arryas */
 	public void combineTech(int[] arraySort, int head, int mid, int rear){
 		int sizeOne = mid - head + 1;
 		int sizeTwo = rear - mid;
@@ -43,6 +45,7 @@ class MergeSort{
 		}
 	}
 	
+	/* Method to divide the arrays */
 	public void divideTech(int[] arraySort, int head, int rear){
 		if(head < rear){
 			int mid = (head+rear)/2;
@@ -52,6 +55,7 @@ class MergeSort{
 		}
 	}
 	
+	/* Method to print array elements */
 	public void printElements(int[] arraySort){
 		for(int value : arraySort){
 			System.out.print(value+",");
