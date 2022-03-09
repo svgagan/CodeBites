@@ -1,12 +1,14 @@
+package javaCode;
+
 import java.util.*;
-/* Prime number Checker */
+/* java.Prime number Checker */
 class Prime{  
 	
 	 static public String primeCheck(int s){
 		int flag = 0, m=0;
 		m = s/2;
 		if(s == 0 || s == 1){
-			return "is not Prime.";
+			return "is not java.Prime.";
 		}
 		for(int i=2; i <= m; i++){
 			if(s%i == 0){
@@ -15,9 +17,9 @@ class Prime{
 			}
 		}
 		if(flag == 1){
-			return "is not Prime.";
+			return "is not java.Prime.";
 		}else{
-			return "is Prime.";
+			return "is java.Prime.";
 		}
 	} 
 	

@@ -1,5 +1,7 @@
+package javaCode;
+
 import java.util.*;
-/* Converting Roman to decimal */
+/* Converting java.Roman to decimal */
 class Roman{  
 		 
 	 public static int romanTointeger(String num){
@@ -22,11 +24,11 @@ class Roman{
 	}
 	
 	public static void main(String args[]){ 
-	 System.out.println("Enter Roman Number");
+	 System.out.println("Enter java.Roman Number");
 	 Scanner scan = new Scanner(System.in);
 	 String value = scan.next();
 	 int response = romanTointeger(value.toUpperCase());
-	 System.out.println("Roman Value -> "+value);  
+	 System.out.println("java.Roman Value -> "+value);
 	 System.out.println("Decimal Value -> "+response);
 	}  
 }

@@ -1,3 +1,5 @@
+package javaCode;
+
 import java.util.*;
 
 /* Given a time represented in the format "HH:MM", form the next closest time by reusing the current digits. 

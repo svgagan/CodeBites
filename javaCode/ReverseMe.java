@@ -1,3 +1,5 @@
+package javaCode;
+
 import java.util.*;
 /* Reverse a string without using build-in libraries */
 class ReverseMe{  

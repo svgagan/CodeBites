@@ -1,3 +1,5 @@
+package javaCode;
+
 // Java program to find sum of all left leaves
 class Node {
 	int data;

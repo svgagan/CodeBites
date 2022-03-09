@@ -1,3 +1,5 @@
+package javaCode;
+
 import java.util.*;
 
 /* Queues Implementation in Java */

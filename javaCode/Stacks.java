@@ -1,6 +1,8 @@
+package javaCode;
+
 import java.util.*;
 
-/* Stacks Implementation in Java */
+/* java.Stacks Implementation in Java */
 class Stacks{
 
 	private int top = -1;

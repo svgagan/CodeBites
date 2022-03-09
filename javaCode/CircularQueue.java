@@ -1,3 +1,5 @@
+package javaCode;
+
 import java.util.*;
 
 /* Circular-Queues Implementation in Java */

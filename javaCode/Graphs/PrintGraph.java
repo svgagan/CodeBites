@@ -1,4 +1,4 @@
-package Graphs;
+package javaCode.Graphs;
 
 public class PrintGraph {
 

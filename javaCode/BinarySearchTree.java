@@ -1,3 +1,5 @@
+package javaCode;
+
 import java.util.*;
 
 /* Binary Search Tree Implementation in Java*/

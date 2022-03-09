@@ -1,3 +1,5 @@
+package javaCode;
+
 /* String Objects Testing  */
 public class TestString{
 	

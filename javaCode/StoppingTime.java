@@ -1,3 +1,5 @@
+package javaCode;
+
 import java.util.*;
 /* 
 f(n) => {	n / 2		if n is even}
