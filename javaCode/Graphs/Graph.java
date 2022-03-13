@@ -1,9 +1,6 @@
 package javaCode.Graphs;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Graph<T> {
 
@@ -12,7 +9,7 @@ public class Graph<T> {
 
     // This function adds a new vertex to the graph
     public void addVertex(T vertex) {
-        adjVertices.putIfAbsent(vertex, new LinkedList<T>());
+        adjVertices.putIfAbsent(vertex, new ArrayList<T>());
     }
 
     // This function adds the edge between source to destination
@@ -37,5 +34,18 @@ public class Graph<T> {
             builder.append("\n");
         }
         return (builder.toString());
+    }
+
+    // Verifies if a source vertex has edge to destination vertex.
+    public void hasAnyEdge(T sourceVertex, T destinationVertex) {
+        if(adjVertices.get(sourceVertex).contains(destinationVertex)) {
+            System.out.println(sourceVertex+" has edge to "+destinationVertex);
+        } else {
+            System.out.println(sourceVertex+" has no edge to "+destinationVertex);
+        }
+    }
+
+    public List<T> getAdjacencyVertices(T vertex) {
+        return adjVertices.get(vertex);
     }
 }
