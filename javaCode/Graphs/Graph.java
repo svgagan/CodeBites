@@ -48,4 +48,8 @@ public class Graph<T> {
     public List<T> getAdjacencyVertices(T vertex) {
         return adjVertices.get(vertex);
     }
+
+    public Set<T> getAllVertex() {
+        return adjVertices.keySet();
+    }
 }
